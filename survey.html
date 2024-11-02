@@ -1,0 +1,47 @@
+<!DOCTYPE=html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input class="input-text" id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label" for="email">Email <input id="email" class="input-text" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label" for="number">Age(optional) <input id="number" class="input-text" type="number" min="0" max="120" placeholder="Age"></label>
+        <label for="dropdown">Which option best describes your current role? <select id="dropdown" class="input-text">
+          <option value="">Select your current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Part Time</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <div id="div-radiobuttons">
+          <label><input value="1" type="radio" name="recommend-radio"> Definetely<label>
+        <label><input value="2" type="radio" name="recommend-radio"> Maybe</label>
+        <label><input value="3" type="radio" name="recommend-radio"> Not Sure</label> 
+        </div>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved? (Check all that apply)</label>
+        <div id="div-checkboxbuttons">
+        <label for="front-end"><input id="front-end" type="checkbox" value="A"> Front-End Projects</label>
+        <label for="back-end"><input id="back-end" type="checkbox" value="B"> Back-End Projects</label>
+        <label for="data-visualization"><input id="data-visualization" type="checkbox" value="C"> Data Visualization</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="comments-suggestions">Any comments or suggestions?
+          <textarea id="comments-suggestions" name="comments-suggestions" rows="4" cols="50" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" class="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
